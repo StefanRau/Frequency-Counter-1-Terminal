@@ -1,0 +1,200 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WindowsApp1
+</name>
+</assembly>
+<members>
+<member name="T:WindowsApp1.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:WindowsApp1.My.Resources.RemoteControlResource">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.ConnectionProblem">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die Connection to device is broken ähnelt.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.EmptyCommand">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die There is no command given ähnelt.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.PortIsClosed">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die The given com port is closed ähnelt.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.PortIsLocked">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die The com port is locked by another process ähnelt.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.Tiemout">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die Timeout - no data received ähnelt.
+</summary>
+</member>
+<member name="P:WindowsApp1.My.Resources.RemoteControlResource.WrongCommand">
+<summary>
+  Sucht eine lokalisierte Zeichenfolge, die The command {0} does not exist ähnelt.
+</summary>
+</member>
+<member name="M:WindowsApp1.RemoteControl.Close">
+ <summary>
+ Closes the connection
+ </summary>
+</member>
+<member name="M:WindowsApp1.RemoteControl.ProcessCommand(System.String)">
+ <summary>
+ Processes a command
+ </summary>
+ <remarks>Processes a complete command</remarks>
+ <param name="iCommand">Contains the command string</param>
+ <returns>
+ Empty string: error in command processing
+ Otherwise: result of the command
+ </returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.CleanBuffer">
+ <summary>
+ Cleans serial input buffer
+ </summary>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetVersion">
+ <summary>
+ Get version and other information
+ </summary>
+ <remarks>Returns beside the version also all information about the hardware.</remarks>
+ <returns>String with all information</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetDeviceName">
+ <summary>
+ Get the name of the connected device
+ </summary>
+ <remarks>Returns the name of the connected hardware.</remarks>
+ <returns>String with all information</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetErrorLog">
+ <summary>
+ Get error log
+ </summary>
+ <remarks>Returns the complete error log.</remarks>
+ <returns>String with all information</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.EraseErrorLog">
+ <summary>
+ Get error log
+ </summary>
+ <remarks>Returns the complete error log.</remarks>
+ <returns>String with all information</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetMeasurementValue">
+ <summary>
+ Reads the current measurement value
+ </summary>
+ <returns>String with measurement value</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetModules">
+ <summary>
+ Returns all modules
+ </summary>
+ <remarks>Gets the list of all availlable modules</remarks>
+ <returns>List of modules</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetSelectedModule">
+ <summary>
+ Gets the module that is currently selected
+ </summary>
+ <returns>Module name</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetFunctions">
+ <summary>
+ Returns all functions - depending on module
+ </summary>
+ <remarks>Gets the list of all availlable functions</remarks>
+ <returns>List of functions</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetSelectedFunction">
+ <summary>
+ Gets the function that is currently selected
+ </summary>
+ <returns>Function name</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetMenuItems">
+ <summary>
+ Returns all menu entries - depending on module
+ </summary>
+ <remarks>Gets the list of all availlable menu entries</remarks>
+ <returns>List of menu entries</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetSelectedMenuItem">
+ <summary>
+ Gets the menu item that is currently selected
+ </summary>
+ <returns>Function name</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetLanguage">
+ <summary>
+ Returns all Languages
+ </summary>
+ <remarks>Gets the list of all availlable menu entries</remarks>
+ <returns>List of menu entries</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.GetSelectedLanguage">
+ <summary>
+ Gets the menu item that is currently selected
+ </summary>
+ <returns>Function name</returns>
+</member>
+<member name="M:WindowsApp1.RemoteControl.SelectModule(System.Int32)">
+ <summary>
+ Sends the module selection to device
+ </summary>
+ <param name="iFunction"></param>
+</member>
+<member name="M:WindowsApp1.RemoteControl.SelectFunction(System.Int32)">
+ <summary>
+ Sends function selection to device
+ </summary>
+</member>
+<member name="M:WindowsApp1.RemoteControl.SelectMenu(System.Int32)">
+ <summary>
+ Sends menu selection to device
+ </summary>
+</member>
+<member name="M:WindowsApp1.RemoteControl.SelectLanguage(System.Int32)">
+ <summary>
+ Sends Language selection to device
+ </summary>
+</member>
+</members>
+</doc>

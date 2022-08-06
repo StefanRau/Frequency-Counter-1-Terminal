@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="OutputErrors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.RightToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainer.RightToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxMenu.Name" xml:space="preserve">
+    <value>ComboBoxMenu</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ToolStripContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>883, 510</value>
+  </data>
+  <data name="StatusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 510</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelLanguage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ToolStripContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;LabelMenu.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ComboBoxModule.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="LabelModules.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 35</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxModule.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="ToolStripButtonSelectConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 22</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelMessage.Name" xml:space="preserve">
+    <value>ToolStripStatusLabelMessage</value>
+  </data>
+  <data name="ToolStripButtonErrorLogErase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="LabelMenu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TabPageLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TabPageLog.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="ToolStripButtonErrorLogErase.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAgNJREFUOE+lkutLk2EYxvePhJaHShFBUTEPiCieQOmDiEZgrEbpYGiCQxkqA80I
+        RUkUEZ0YRMS+DDI70MkTmzJnDc8iU8QT2mAEItnle90wHwTDyBduXnie5/rd133Q4ZKfAJqHFs9E08A8
+        zD1emDpmYXjqRlnTFIrMk8iuGkNaxWekGEaQrHecBfw+/vPXODw6hj9whN2fh/Bt/8LSRgA3cxr/DeBZ
+        9kvmTNMoHGNbIrYN+3Aj23IxgJkpds0doP3VstgmsNexhutZ9QrAms8T0zYzU5xXM46kcjsmvfvoeL2i
+        AeoUgA07T8yaaZuZKab1rzN74jgys1YB2O2gmBZzH49LODXrrJlnzEzxe9cOLH1ziMioVgCOiuIFX0CE
+        Q+/WYf+yieiCFrRp9tkwxnP7Kt5MbKGm6wfC000KwDlTXNLgEvHMkh+Db32o7fYivtQm1l9+3IBOp5P7
+        yjYPwlKNCsAluWudxgvtknb5t9oWcL/VLU2Mvd2JFq3uqs7vAtE/ceNayiMF4KiYMSjmY2O7B4Ua+NaD
+        YQGEJumRbvyG1IcfBHI12aAAXM8R57aIWTNrLLY4tfNPiCvpR1SeVeu6WWzHFD6THSDwFMDdpmUG62NJ
+        PKM4Or9ZxBxb8H8l7g5CEu8pAOfM3WanSeeS8CFHxW4zM2umbWamOCShXAH+/wNOANABIDUxWnDPAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxMenu.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.LeftToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolStripContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;LabelFunction.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ToolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="LabelMeasurementValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonErrorLogErase.Name" xml:space="preserve">
+    <value>ToolStripButtonErrorLogErase</value>
+  </data>
+  <data name="&gt;&gt;TabPageErrors.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMeasurementValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;COM1ToolStripMenuItem.Name" xml:space="preserve">
+    <value>COM1ToolStripMenuItem</value>
+  </data>
+  <data name="LabelLanguage.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LabelMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonConnect.Name" xml:space="preserve">
+    <value>ToolStripButtonConnect</value>
+  </data>
+  <data name="&gt;&gt;LabelLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.ContentPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainer</value>
+  </data>
+  <data name="OutputText.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LabelLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 116</value>
+  </data>
+  <data name="TabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>883, 485</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.TopToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelFunction.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="ToolStripButtonConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxFunction.Name" xml:space="preserve">
+    <value>ComboBoxFunction</value>
+  </data>
+  <data name="&gt;&gt;TabPageSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Name" xml:space="preserve">
+    <value>StatusStrip1</value>
+  </data>
+  <data name="ToolStripButtonGetErrors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="LabelFunction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="&gt;&gt;TabPageErrors.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="TextBoxMeasurementValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <data name="&gt;&gt;OutputErrors.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMeasurementValue.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;TabPageLog.Name" xml:space="preserve">
+    <value>TabPageLog</value>
+  </data>
+  <data name="LabelMeasurementValue.Text" xml:space="preserve">
+    <value>Measurement Value</value>
+  </data>
+  <data name="ToolStripButtonConnect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="LabelLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.BottomToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainer.BottomToolStripPanel</value>
+  </data>
+  <data name="LabelMeasurementValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.RightToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OutputErrors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 453</value>
+  </data>
+  <data name="&gt;&gt;TabPageLog.Parent" xml:space="preserve">
+    <value>TabControl</value>
+  </data>
+  <data name="TabPageSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 459</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.LeftToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainer.LeftToolStripPanel</value>
+  </data>
+  <data name="TabPageErrors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="ToolStripButtonGetErrors.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="TextBoxMeasurementValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 6</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxModule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ComboBoxLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="TabPageLog.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip1.Parent" xml:space="preserve">
+    <value>ToolStripContainer.TopToolStripPanel</value>
+  </data>
+  <data name="TabPageErrors.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LabelFunction.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripButtonErrorLogErase.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ComboBoxFunction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 59</value>
+  </data>
+  <data name="&gt;&gt;LabelModules.Name" xml:space="preserve">
+    <value>LabelModules</value>
+  </data>
+  <data name="ToolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="TabPageSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.ContentPanel.Name" xml:space="preserve">
+    <value>ToolStripContainer.ContentPanel</value>
+  </data>
+  <data name="LabelModules.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.Name" xml:space="preserve">
+    <value>ToolStripContainer</value>
+  </data>
+  <data name="ComboBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 21</value>
+  </data>
+  <data name="LabelMeasurementValue.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Frequency Counter</value>
+  </data>
+  <data name="TabPageErrors.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.LeftToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainer</value>
+  </data>
+  <data name="TabPageSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;LabelMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OutputText.Name" xml:space="preserve">
+    <value>OutputText</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="ComboBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 113</value>
+  </data>
+  <data name="LabelFunction.Text" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="LabelModules.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="LabelLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="LabelFunction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 62</value>
+  </data>
+  <data name="ToolStripStatusLabelMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="LabelMenu.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxModule.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LabelModules.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxFunction.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TabControl.Parent" xml:space="preserve">
+    <value>ToolStripContainer.ContentPanel</value>
+  </data>
+  <data name="ComboBoxModule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 21</value>
+  </data>
+  <data name="&gt;&gt;LabelMeasurementValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelModules.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabPageErrors.Parent" xml:space="preserve">
+    <value>TabControl</value>
+  </data>
+  <data name="&gt;&gt;TabPageLog.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;OutputErrors.Parent" xml:space="preserve">
+    <value>TabPageErrors</value>
+  </data>
+  <data name="TextBoxMeasurementValue.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TabPageSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LabelLanguage.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;OutputErrors.Name" xml:space="preserve">
+    <value>OutputErrors</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxFunction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelLanguage.Name" xml:space="preserve">
+    <value>LabelLanguage</value>
+  </data>
+  <data name="OutputErrors.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="OutputText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ToolStripContainer.ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>883, 485</value>
+  </data>
+  <data name="ToolStripButtonGetErrors.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAFdJREFUOE9jAIFv3779JweDNYMAiOPk5EQSxjAAZsiH9x8JYqwGwEzGpgEdE+UC
+        mIHIGK8B2BShY7wGoLsAH8ZqALot+PCoC2jtAmIxVheQiqHaKQEMDACRxKfDfb8K/QAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="&gt;&gt;TabPageSettings.Name" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="ComboBoxModule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 32</value>
+  </data>
+  <data name="ComboBoxMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 21</value>
+  </data>
+  <data name="&gt;&gt;LabelModules.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.RightToolStripPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LabelFunction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip1.Name" xml:space="preserve">
+    <value>ToolStrip1</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.TopToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainer</value>
+  </data>
+  <data name="LabelMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="ToolStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>883, 532</value>
+  </data>
+  <data name="TabPageLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 459</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OutputErrors.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabPageSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OutputText.Parent" xml:space="preserve">
+    <value>TabPageLog</value>
+  </data>
+  <data name="ToolStripButtonGetErrors.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;TabPageErrors.Name" xml:space="preserve">
+    <value>TabPageErrors</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.TopToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainer.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.TopToolStripPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LabelMeasurementValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxLanguage.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;LabelMeasurementValue.Name" xml:space="preserve">
+    <value>LabelMeasurementValue</value>
+  </data>
+  <data name="ToolStripButtonConnect.ToolTipText" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="ComboBoxFunction.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;LabelMenu.Name" xml:space="preserve">
+    <value>LabelMenu</value>
+  </data>
+  <data name="OutputText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMeasurementValue.Name" xml:space="preserve">
+    <value>TextBoxMeasurementValue</value>
+  </data>
+  <data name="TabPageSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="StatusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>883, 22</value>
+  </data>
+  <data name="LabelFunction.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.ContentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LabelMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 89</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonGetErrors.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripContainer.Text" xml:space="preserve">
+    <value>ToolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxModule.Name" xml:space="preserve">
+    <value>ComboBoxModule</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxLanguage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="OutputErrors.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonSelectConnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OutputText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripButtonConnect.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OutputText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 453</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonGetErrors.Name" xml:space="preserve">
+    <value>ToolStripButtonGetErrors</value>
+  </data>
+  <data name="OutputText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripButtonConnect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAMZJREFUOE/VTzsKAjEQzaEsFhGx8AyCRxAWDyJaiIhX0FNYWypsuY0KgkXUJp2O
+        85aJiBOyQWx88GB4v+yaEJxzFKLY9UA4GzVeRX+LXY+vB3zhvfR5gxLX8OEYkwaul1uQfzBgrb23xhmV
+        x1KVocFDRuIavL7JlwNarOdqABo8ZCSuwWZ/t99Sd9qpCngVxA0NHjISD4MDs+JQ0HCVU3vSrIgbGjyJ
+        xcHBHv/rA58M4oYmdhq4cPIDfJ9FTsdPBpgoRwaMeQKBKZSrUSJI7QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="COM1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;LabelMenu.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ToolStripButtonErrorLogErase.Text" xml:space="preserve">
+    <value>Erase EEPROM</value>
+  </data>
+  <data name="&gt;&gt;LabelFunction.Name" xml:space="preserve">
+    <value>LabelFunction</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonSelectConnection.Name" xml:space="preserve">
+    <value>ToolStripButtonSelectConnection</value>
+  </data>
+  <data name="ComboBoxMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 86</value>
+  </data>
+  <data name="StatusStrip1.Text" xml:space="preserve">
+    <value>StatusStrip</value>
+  </data>
+  <data name="LabelModules.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ComboBoxMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="ToolStripContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.RightToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;LabelMeasurementValue.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.ContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContentPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripButtonGetErrors.Text" xml:space="preserve">
+    <value>Get Errors</value>
+  </data>
+  <data name="TabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.BottomToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ComboBoxFunction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 21</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelModules.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;OutputText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TabPageLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="TabPageLog.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;TabPageSettings.Parent" xml:space="preserve">
+    <value>TabControl</value>
+  </data>
+  <data name="&gt;&gt;COM1ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxFunction.Parent" xml:space="preserve">
+    <value>TabPageSettings</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMeasurementValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.BottomToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.LeftToolStripPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TabControl.Name" xml:space="preserve">
+    <value>TabControl</value>
+  </data>
+  <data name="ToolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="OutputErrors.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ComboBoxLanguage.Name" xml:space="preserve">
+    <value>ComboBoxLanguage</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonErrorLogErase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StatusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TabPageErrors.Text" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="LabelMeasurementValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 9</value>
+  </data>
+  <data name="TabPageErrors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 459</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainer.BottomToolStripPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de-DE</value>
+  </metadata>
+  <metadata name="ToolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
+  </metadata>
+</root>

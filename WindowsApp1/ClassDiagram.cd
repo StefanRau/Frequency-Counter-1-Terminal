@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsApp1.RemoteControl">
+    <Position X="0.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAIIAAAACAICAABAAKEAEAAAAARAQAAAACAgE=</HashCode>
+      <FileName>RemoteControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApp1.RemoteControlException">
+    <Position X="4" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RemoteControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApp1.Main">
+    <Position X="7.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYEABDUIIAAQQBiCBEgSARAIAAAAICAAAABAEAY=</HashCode>
+      <FileName>Main.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="WindowsApp1.DelegateOnTimedEvent">
+    <Position X="10.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Main.vb</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

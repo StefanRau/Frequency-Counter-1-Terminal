@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4173fc17-53d7-4189-b3cd-806753973a6f": {
+      "ProjectGuid": "4173fc17-53d7-4189-b3cd-806753973a6f",
+      "DisplayName": "Terminal",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
