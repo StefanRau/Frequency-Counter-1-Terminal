@@ -10,7 +10,7 @@
        <Types>
         <Type Name="RemoteControlException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2022-08-11 19:44:19Z" FixCategory="NonBreaking">
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2022-08-11 21:06:52Z" FixCategory="NonBreaking">
            <Issue Certainty="95" Level="Error">Fügen Sie 'RemoteControlException' [Serializable] hinzu, da dieser Typ ISerializable implementiert.</Issue>
           </Message>
          </Messages>
