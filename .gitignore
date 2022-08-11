@@ -32,3 +32,5 @@
 *.app
 
 .vs
+.WindowsApp1/.bin
+.WindowsApp1/.obj
