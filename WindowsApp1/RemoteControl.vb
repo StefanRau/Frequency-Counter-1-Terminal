@@ -12,26 +12,38 @@ Public Class RemoteControl
     Private ReadOnly mMenuItems As New Dictionary(Of String, String)
     Private ReadOnly mLanguages As New Dictionary(Of String, String)
 
-    Sub New()
+    Sub New(iComPort As String)
+        Dim lExceptionOccured As Boolean = False
+
         ' Open the resource and block it
         Try
 
-            mComPort = My.Computer.Ports.OpenSerialPort("COM3", 115200, IO.Ports.Parity.None, 8, IO.Ports.StopBits.One)
+            mComPort = My.Computer.Ports.OpenSerialPort(iComPort, 115200, IO.Ports.Parity.None, 8, IO.Ports.StopBits.One)
 
             ' Reset Arduino
+            Thread.Sleep(100)
             mComPort.DtrEnable = True
             Thread.Sleep(100)
             mComPort.DtrEnable = False
+            Thread.Sleep(100)
             mComPort.ReadTimeout = 10000
-            ' Read startup message
-            Main.ToolStripStatusLabelMessage.Text = mComPort.ReadLine()
 
         Catch ex As TimeoutException
+            lExceptionOccured = True
             Throw New RemoteControlException(RemoteControlResource.Tiemout, ex)
         Catch ex As UnauthorizedAccessException
+            lExceptionOccured = True
             Throw New RemoteControlException(RemoteControlResource.PortIsLocked, ex)
         Catch ex As IOException
+            lExceptionOccured = True
             Throw New RemoteControlException(RemoteControlResource.PortIsClosed, ex)
+        Finally
+            If lExceptionOccured Then
+                If mComPort IsNot Nothing Then
+                    mComPort.Close()
+                    mComPort = Nothing
+                End If
+            End If
         End Try
     End Sub
 

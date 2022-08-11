@@ -46,6 +46,7 @@ Partial Class Main
         Me.ToolStripButtonErrorLogErase = New System.Windows.Forms.ToolStripButton()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabelMessage = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripTextBoxComPort = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripContainer.ContentPanel.SuspendLayout()
         Me.ToolStripContainer.TopToolStripPanel.SuspendLayout()
         Me.ToolStripContainer.SuspendLayout()
@@ -191,7 +192,7 @@ Partial Class Main
         'ToolStrip1
         '
         resources.ApplyResources(Me.ToolStrip1, "ToolStrip1")
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButtonConnect, Me.ToolStripButtonGetErrors, Me.ToolStripButtonErrorLogErase})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButtonConnect, Me.ToolStripButtonGetErrors, Me.ToolStripButtonErrorLogErase, Me.ToolStripTextBoxComPort})
         Me.ToolStrip1.Name = "ToolStrip1"
         '
         'ToolStripButtonConnect
@@ -222,6 +223,11 @@ Partial Class Main
         '
         resources.ApplyResources(Me.ToolStripStatusLabelMessage, "ToolStripStatusLabelMessage")
         Me.ToolStripStatusLabelMessage.Name = "ToolStripStatusLabelMessage"
+        '
+        'ToolStripTextBoxComPort
+        '
+        resources.ApplyResources(Me.ToolStripTextBoxComPort, "ToolStripTextBoxComPort")
+        Me.ToolStripTextBoxComPort.Name = "ToolStripTextBoxComPort"
         '
         'Main
         '
@@ -271,4 +277,5 @@ Partial Class Main
     Friend WithEvents OutputErrors As RichTextBox
     Friend WithEvents ToolStripButtonGetErrors As ToolStripButton
     Friend WithEvents ToolStripButtonErrorLogErase As ToolStripButton
+    Friend WithEvents ToolStripTextBoxComPort As ToolStripTextBox
 End Class

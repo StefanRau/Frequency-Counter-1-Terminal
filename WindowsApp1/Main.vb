@@ -29,6 +29,7 @@ Public Class Main
 
     Private Sub InitializeRemoteControl()
 
+        mIsInitialized = False
         Try
 
             If mRemoteControl IsNot Nothing Then
@@ -36,7 +37,8 @@ Public Class Main
                 mRemoteControl = Nothing
             End If
 
-            mRemoteControl = New RemoteControl()
+            mRemoteControl = New RemoteControl(My.Settings.ComPort)
+            ToolStripTextBoxComPort.Text = My.Settings.ComPort
             Text = mRemoteControl.GetDeviceName() ' Load the name of the device into window header
             RefreshModules()    ' Load installed modules
             RefreshFunctions()  ' Load functions that are currently possible
@@ -106,91 +108,174 @@ Public Class Main
 
     Private Sub RefreshModules()
         ' Load installed modules
-        ComboBoxModule.Items.Clear()
-        For Each lModule As String In mRemoteControl.GetModules()
-            ComboBoxModule.Items.Add(lModule)
-        Next
-        ' get selected module
-        ComboBoxModule.SelectedItem = mRemoteControl.GetSelectedModule()
-        mSelectedModule = ComboBoxModule.SelectedItem.ToString
+
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
+        Try
+
+            ComboBoxModule.Items.Clear()
+            For Each lModule As String In mRemoteControl.GetModules()
+                ComboBoxModule.Items.Add(lModule)
+            Next
+            ' get selected module
+            ComboBoxModule.SelectedItem = mRemoteControl.GetSelectedModule()
+            mSelectedModule = ComboBoxModule.SelectedItem.ToString
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
 
     Private Sub ComboBoxModule_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxModule.SelectedIndexChanged
-        If mIsInitialized Then
+        If mIsInitialized And (mRemoteControl IsNot Nothing) Then
             Dim lObject As ComboBox = CType(sender, ComboBox)
-            mRemoteControl.SelectModule(lObject.SelectedIndex)
 
-            If gTimer IsNot Nothing Then
-                If Not gTimer.Enabled Then
-                    gTimer.Start()
+            Try
+
+                mRemoteControl.SelectModule(lObject.SelectedIndex)
+
+                If gTimer IsNot Nothing Then
+                    If Not gTimer.Enabled Then
+                        gTimer.Start()
+                    End If
                 End If
-            End If
+
+            Catch ex As RemoteControlException
+                ToolStripStatusLabelMessage.Text = ex.Message
+            End Try
+
         End If
     End Sub
 
     Private Sub RefreshFunctions()
+
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
         ComboBoxFunction.Items.Clear()
-        For Each lFunction As String In mRemoteControl.GetFunctions()
+
+        Try
+
+            For Each lFunction As String In mRemoteControl.GetFunctions()
             ComboBoxFunction.Items.Add(lFunction)
         Next
-        ' get selected function
-        ComboBoxFunction.SelectedItem = mRemoteControl.GetSelectedFunction()
+            ' get selected function
+            ComboBoxFunction.SelectedItem = mRemoteControl.GetSelectedFunction()
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
 
     Private Sub ComboBoxFunctions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxFunction.SelectedIndexChanged
-        If mIsInitialized Then
+        If mIsInitialized And (mRemoteControl IsNot Nothing) Then
             Dim lObject As ComboBox = CType(sender, ComboBox)
-            mRemoteControl.SelectFunction(lObject.SelectedIndex)
 
-            If gTimer IsNot Nothing Then
-                If Not gTimer.Enabled Then
-                    gTimer.Start()
+            Try
+
+                mRemoteControl.SelectFunction(lObject.SelectedIndex)
+
+                If gTimer IsNot Nothing Then
+                    If Not gTimer.Enabled Then
+                        gTimer.Start()
+                    End If
                 End If
-            End If
+
+            Catch ex As RemoteControlException
+                ToolStripStatusLabelMessage.Text = ex.Message
+            End Try
+
         End If
     End Sub
 
     Private Sub RefreshMenus()
+
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
         ComboBoxMenu.Items.Clear()
-        For Each lMenu As String In mRemoteControl.GetMenuItems()
-            ComboBoxMenu.Items.Add(lMenu)
-        Next
-        ' get selected menu item
-        ComboBoxMenu.SelectedItem = mRemoteControl.GetSelectedMenuItem()
+
+        Try
+
+            For Each lMenu As String In mRemoteControl.GetMenuItems()
+                ComboBoxMenu.Items.Add(lMenu)
+            Next
+            ' get selected menu item
+            ComboBoxMenu.SelectedItem = mRemoteControl.GetSelectedMenuItem()
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
 
     Private Sub ComboBoxMenu_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxMenu.SelectedIndexChanged
-        If mIsInitialized Then
+        If mIsInitialized And (mRemoteControl IsNot Nothing) Then
             Dim lObject As ComboBox = CType(sender, ComboBox)
-            mRemoteControl.SelectMenu(lObject.SelectedIndex)
 
-            If gTimer IsNot Nothing Then
-                If Not gTimer.Enabled Then
-                    gTimer.Start()
+            Try
+
+                mRemoteControl.SelectMenu(lObject.SelectedIndex)
+
+                If gTimer IsNot Nothing Then
+                    If Not gTimer.Enabled Then
+                        gTimer.Start()
+                    End If
                 End If
-            End If
+
+            Catch ex As RemoteControlException
+                ToolStripStatusLabelMessage.Text = ex.Message
+            End Try
+
         End If
     End Sub
 
     Private Sub RefreshLanguages()
+
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
         ComboBoxLanguage.Items.Clear()
-        For Each lMenu As String In mRemoteControl.GetLanguage()
-            ComboBoxLanguage.Items.Add(lMenu)
-        Next
-        ' get selected language
-        ComboBoxLanguage.SelectedItem = mRemoteControl.GetSelectedLanguage()
+
+        Try
+
+            For Each lMenu As String In mRemoteControl.GetLanguage()
+                ComboBoxLanguage.Items.Add(lMenu)
+            Next
+            ' get selected language
+            ComboBoxLanguage.SelectedItem = mRemoteControl.GetSelectedLanguage()
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
 
     Private Sub ComboBoxLanguage_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxLanguage.SelectedIndexChanged
-        If mIsInitialized Then
+        If mIsInitialized And (mRemoteControl IsNot Nothing) Then
             Dim lObject As ComboBox = CType(sender, ComboBox)
-            mRemoteControl.SelectLanguage(lObject.SelectedIndex)
 
-            If gTimer IsNot Nothing Then
-                If Not gTimer.Enabled Then
-                    gTimer.Start()
+            Try
+
+                mRemoteControl.SelectLanguage(lObject.SelectedIndex)
+
+                If gTimer IsNot Nothing Then
+                    If Not gTimer.Enabled Then
+                        gTimer.Start()
+                    End If
                 End If
-            End If
+
+            Catch ex As RemoteControlException
+                ToolStripStatusLabelMessage.Text = ex.Message
+            End Try
+
         End If
     End Sub
 
@@ -199,22 +284,81 @@ Public Class Main
     End Sub
 
     Private Sub ToolStripButtonGetErrors_Click(sender As Object, e As EventArgs) Handles ToolStripButtonGetErrors.Click
-        OutputErrors.Text = mRemoteControl.GetErrorLog()
+
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
+        Try
+
+            OutputErrors.Text = mRemoteControl.GetErrorLog()
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
 
     Private Sub ToolStripButtonErrorLogErase_Click(sender As Object, e As EventArgs) Handles ToolStripButtonErrorLogErase.Click
-        ToolStripStatusLabelMessage.Text = mRemoteControl.EraseErrorLog()
+
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
+        Try
+
+            ToolStripStatusLabelMessage.Text = mRemoteControl.EraseErrorLog()
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
 
     Private Sub TabControl_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl.SelectedIndexChanged
-        Dim lTabControl As TabControl
+        Dim lObject As TabControl
 
-        lTabControl = CType(sender, TabControl)
-        Select Case lTabControl.SelectedIndex
-            Case 1
-                OutputText.Text = mRemoteControl.GetVersion()
-            Case 2
-                OutputErrors.Text = mRemoteControl.GetErrorLog()
-        End Select
+        If mRemoteControl Is Nothing Then
+            Return
+        End If
+
+        lObject = CType(sender, TabControl)
+
+        Try
+
+            Select Case lObject.SelectedIndex
+                Case 1
+                    OutputText.Text = mRemoteControl.GetVersion()
+                Case 2
+                    OutputErrors.Text = mRemoteControl.GetErrorLog()
+            End Select
+
+        Catch ex As RemoteControlException
+            ToolStripStatusLabelMessage.Text = ex.Message
+        End Try
+
     End Sub
+
+    Private Sub ToolStripTextBoxComPort_TextChanged(sender As Object, e As EventArgs) Handles ToolStripTextBoxComPort.TextChanged
+        Dim lObject As ToolStripTextBox
+
+        If mIsInitialized And (mRemoteControl IsNot Nothing) Then
+
+            Try
+
+                lObject = CType(sender, ToolStripTextBox)
+                My.Settings.ComPort = lObject.Text
+
+                mRemoteControl.Close()
+                mRemoteControl = Nothing
+                InitializeRemoteControl()
+
+            Catch ex As RemoteControlException
+                ToolStripStatusLabelMessage.Text = ex.Message
+            End Try
+
+        End If
+
+    End Sub
+
 End Class

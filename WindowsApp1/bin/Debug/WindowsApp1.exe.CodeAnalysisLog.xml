@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\enterprise\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="17.0">
  <Targets>
-  <Target Name="C:\Projekte\Frequency Counter\V1.0\Terminal\WindowsApp1\bin\Debug\WindowsApp1.exe">
+  <Target Name="c:\Stefan\Backup\Projekte\Frequency Counter\V1.0\Terminal\WindowsApp1\bin\Debug\WindowsApp1.exe">
    <Modules>
     <Module Name="windowsapp1.exe">
      <Namespaces>
@@ -10,7 +10,7 @@
        <Types>
         <Type Name="RemoteControlException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2022-08-06 17:50:31Z" FixCategory="NonBreaking">
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2022-08-08 21:16:59Z" FixCategory="NonBreaking">
            <Issue Certainty="95" Level="Error">Fügen Sie 'RemoteControlException' [Serializable] hinzu, da dieser Typ ISerializable implementiert.</Issue>
           </Message>
          </Messages>

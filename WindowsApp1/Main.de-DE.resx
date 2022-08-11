@@ -149,9 +149,9 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVDhP1U87CgIxEM2hLBYRsfAMgkcQFg8iWoiIV9BT
-        WFsqbLmNSgQbtUmn47xlIuKEbBAbHzwY3i+7JgTnHIUodj0QzkaNV9HfYtfj6wFfeC993qDENXw4xqSB
+        WFsqbLmNGgQbtUmn47xlIuKEbBAbHzwY3i+7JgTnHIUodj0QzkaNV9HfYtfj6wFfeC993qDENXw4xqSB
         6+UW5B8MWGvvrXFG5bFUZWjwkJG4Bq9v8uWAFuu5GoAGDxmJa7DZ3+231J12qgJeBXFDg4eMxMPgwKw4
-        FDRc5dSeNCvihgZPYnFwsMf/+sAng7ihiZ0GLpz8AN9nkdPxkwEmypEBY5762pRL4jcG+QAAAABJRU5E
+        FDRc5dSeNCvihgZPYnFwsMf/+sAng7ihiZ0GLpz8AN9nkdPxkwEmypEBY57qEpQ/5XMnUwAAAABJRU5E
         rkJggg==
 </value>
   </data>
@@ -175,14 +175,20 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVDhPnZG9DcIwEIVvASRGoKKmpE5NdqBgAxagSc8A
-        aeigTDagg5IBEAURiCqJlJ/S+BmfOCISYp705HPk793ZoaIoJlVVZTBqsVddJpbeZPvlQsGos+s1j2ZT
-        s4/jWHme9+EgCMw5ixPlj7sCsBkPDMQ11mYAw5jS4kR1Xc9lCMPRbvsbhvCBx+aA5vitMCRh09nWHNIJ
-        QxwA3y5ndToeTG0ftdUWf18B7xCGofJ934R8+wPyOhZ/CSFIBYxDvDbdeR0ejY1pesNS+reOkiTJ5RS9
-        YUgfXMvuTnCapkPZ3QmGyrJccXdnGAKA7n/BkIYAOsBET/uc2AshTzBXAAAAAElFTkSuQmCC
+        aeigTDagg5IBEEUkUKokUn5K42d84ohIiHnSk8+Rv3dnh8qynNV1ncOoxV71mVh6kx/XKwWjzpOkiBZz
+        s4/jWHme9+EgCMw5ixMV6UMB2E1HBuIaazuAYUxpcaKmaZYyhOHosP8NQ/jAY3NAe/xOGJKw6WxrDumF
+        IQ6A77erupxPpraP2mmLv6+AdwjDUPm+b0K+/QF5HYu/hBCkAsYhXtvuvQ6PxsY0g2Ep/Vsnib6SnGIw
+        DOmDW9ndCc6ybCy7O8FQVVUb7u4MQwDQ/S8Y0hBAB5joCfR22AVvVkXYAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="ToolStripButtonErrorLogErase.ToolTipText" xml:space="preserve">
     <value>EEPROM löschen</value>
+  </data>
+  <data name="ToolStripTextBoxComPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="ToolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 25</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Gerät</value>
